@@ -20,6 +20,8 @@ jobs:
   typecheck:
     name: Typecheck
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     needs:
       - prepare
     steps:
